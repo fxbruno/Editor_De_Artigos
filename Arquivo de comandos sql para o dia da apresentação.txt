@@ -1,0 +1,37 @@
+Comandos SQL:
+pagina:
+http://localhost/phpmyadmin/
+->blog ->artigos
+
+	Atualizar artigo existente:
+
+'UPDATE artigos SET titulo = ?, conteudo = ? WHERE id = ?'
+
+
+	Exemplo: 
+ 		UPDATE artigos SET titulo = 'titulo alterado', conteudo = 'Conteudo alterado' WHERE id = 3
+
+
+		selecionar todos os artigos:
+
+			SELECT * FROM `artigos` 
+
+
+		selecionar artigo especifico
+                           
+ 
+                        (filtrando por id)			
+			SELECT * FROM `artigos` WHERE  id=X
+
+                        (filtrando por titulo)			
+			SELECT * FROM `artigos` WHERE  titulo='X'
+
+
+
+
+		deletar:
+			DELETE FROM artigos WHERE id= X 
+
+
+	       Inserir novos titulos
+			INSERT INTO artigos (titulo, conteudo) VALUES(?,?)

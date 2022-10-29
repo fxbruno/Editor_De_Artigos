@@ -2,7 +2,6 @@
 :root {
   --cor-principal: #0CF25D;
 }
-html, body {  width:100%;  height:100vh; }
 body {
   margin: 0;
   border: 0;
@@ -12,16 +11,21 @@ body {
   letter-spacing: 2px;
 }
 
-
+h1{
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
 h2,
 p {
   padding: 10px auto;
   text-align: justify;
   margin: 0px 40px 40px 40px;
+  font-size: 18px;
 }
 
 h2 {
-  color: #fbfbfb;
+  color: #ffffff;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -50,45 +54,14 @@ ul {
 #artigo-admin:hover {
   background-color: #cccccc;
 }
-#conteudo {
-  font-family: Arial;
-  padding: 20px;
-  height: 300px;
-  width: 80%;
-  border: 1 solid #F9943B;
-  border-radius: 20px;
+
+.campo-form {
   margin: 10px 0;
   display: block;
 }
 
-#titulo{
-  font-family: Arial;
-  padding: 20px;
-  height: 60px;
-  width: 80%;
-  border: 1 solid #F9943B;
-  border-radius: 20px;
-  margin: 10px 0;
-  display: block;
-}
-
-.botao{
-  text-align: center;
-  padding: 3px 5px 5px;
-  justify-content: space-evenly;
-  width: 140px;
-  border-radius: 8px;
-  position: relative;
-  margin-top: 1rem;
-  transition: 0.3s;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 1.5px;
-  height: 40px;
-  
-}
 .botao-block {
   color: white;
   font-weight: bold;
+  text-align: center;
 }
-

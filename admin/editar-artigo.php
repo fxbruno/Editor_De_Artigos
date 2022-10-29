@@ -19,12 +19,22 @@ $art = $artigo->encontrarPorId($_GET['id']);
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="../nav.css" /> 
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <title>Editar Artigo</title>
 </head>
 
 <body>
+    <header>
+      <nav>
+        <a class="logo" href="../index.php"><img src="" alt="">Blog - Artigos estudos</a>
+        <ul class="nav-list">
+          <li><a href="../index.php">Início</a></li>
+          <li><a href="index.php">Administrativa</a></li>
+        </ul>
+      </nav>
+    </header>
     <div id="container">
         <h1>Editar Artigo</h1>
         <form action="editar-artigo.php" method="post">
@@ -34,13 +44,13 @@ $art = $artigo->encontrarPorId($_GET['id']);
             </p>
             <p>
                 <label for="conteudo">Digite o novo conteúdo do artigo</label>
-                <textarea class="campo-form" type="text" name="conteudo" id="titulo"><?php echo $art['conteudo']; ?></textarea>
+                <textarea class="campo-form" type="text" name="conteudo" id= "conteudo"><?php echo $art['conteudo']; ?></textarea>
             </p>
             <p>
                 <input type="hidden" name="id" value="<?php echo $art['id']; ?>" />
             </p>
             <p>
-                <button class="botao">Editar Artigo</button>
+                <button class="botao" href="./index.php">Editar Artigo</button>
             </p>
         </form>
     </div>

@@ -16,12 +16,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="pt-br">
 
 <head>
+<link rel="stylesheet" href="../nav.css" />
     <link rel="stylesheet" type="text/css" href="../style.css">
     <meta charset="UTF-8">
     <title>Adicionar Artigo</title>
 </head>
 
 <body>
+    <header>
+      <nav>
+        <a class="logo" href="../index.php"><img src="" alt="">Blog - Artigos estudos</a>
+        <ul class="nav-list">
+          <li><a href="../index.php">Início</a></li>
+          <li><a href="/index.php">Administrativa</a></li>
+        </ul>
+      </nav>
+    </header>
     <div id="container">
         <h1>Adicionar Artigo</h1>
         <form action="adicionar-artigo.php" method="POST">
@@ -34,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <textarea class="campo-form" type="text" name="conteudo" id="conteudo"></textarea>
             </p>
             <p>
-                <button class="botao">Criar Artigo</button>
+                <button class="botao" url="http://127.0.0.1/Projeto%20artigo/index.php">Criar Artigo</button>
             </p>
         </form>
     </div>
